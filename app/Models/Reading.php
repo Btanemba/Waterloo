@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Reading extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'meter_id',
+        'meter_number',  // Add meter_number to the fillable array
+        'reading_value',
+        'photo',
+        'reading_year',
+        'reading_month',
+        'reading_day',
+    ];
+}
